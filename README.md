@@ -26,10 +26,10 @@ Reorganized and cleaned the DataFrame, verifying data types before exporting as 
 
 **5.	Output:**
 The processed data was saved in the Resources folder as:
-	category.csv
-	subcategory.csv
-	campaign.csv
-	contacts.csv
+	category.csv
+	subcategory.csv
+	campaign.csv
+	contacts.csv
 
 This structured approach ensures the data is clean, well-organized, and ready for further analysis or integration into other systems. The exported CSV files are encoded in UTF-8 format for compatibility with most data tools.
 
@@ -48,15 +48,15 @@ campaign Table: Contains detailed information about crowdfunding campaigns, such
 
 **3.	Foreign Key Constraints:**
 The campaign table is linked to the contacts, category, and subcategory tables through foreign keys:
-	contact_id references the contact_id in the contacts table.
-	category_id references the category_id in the category table.
-	subcategory_id references the subcategory_id in the subcategory table.
+	contact_id references the contact_id in the contacts table.
+	category_id references the category_id in the category table.
+	subcategory_id references the subcategory_id in the subcategory table.
 
 **4.	Select Queries:**
 After creating the tables and establishing the relationships, the following SELECT queries are used to retrieve all data from each table:
-	SELECT * FROM campaign;
-	SELECT * FROM category;
-	SELECT * FROM contacts;
-	SELECT * FROM subcategory;
+	SELECT * FROM campaign;
+	SELECT * FROM category;
+	SELECT * FROM contacts;
+	SELECT * FROM subcategory;
 This script ensures that the necessary tables are created and populated with data for further analysis and reporting related to crowdfunding campaigns. The relationships between the tables are maintained through primary and foreign keys, ensuring data integrity and consistency across the database.
 
